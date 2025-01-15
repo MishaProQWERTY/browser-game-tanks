@@ -1,0 +1,126 @@
+body {
+    height: 50em;
+    margin: 0;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    display: block;
+    margin: auto;
+}
+
+* {
+    outline: 0;
+}
+
+select {
+    border-radius: 3px;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.input-style {
+    color: aliceblue;
+    margin: auto auto 20px auto;
+    border-radius: 2px;
+}
+
+.input-style-on {
+    background-color: rgb(200, 140, 140);
+    color: rgb(17, 175, 115);
+    margin: auto auto 20px auto;
+    border-radius: 2px;
+}
+
+.input-style-cont {
+    display: flex;
+    margin: auto auto 20px auto;
+    color:black;
+}
+
+.input-span-const {
+    margin: auto;
+    padding: 2px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.input-span-const-2 {
+    margin: auto;
+    padding: 2px;
+    border-radius: 2px;
+    background-color: rgb(159, 179, 50);
+}
+
+.input-span {
+    margin: 1px;
+}
+
+.input-span:hover {
+    color: rgba(216, 103, 103, 0.945);
+    cursor: pointer;
+}
+
+.input-style:hover {
+    color: rgba(216, 103, 103, 0.945);
+}
+
+
+.button-play-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-play {
+    font-size: 18px;
+    border: 0;
+    border-radius: 3px;
+    color: rgb(189, 18, 189);
+    background-color: rgba(98, 211, 7, 0.931);
+}
+
+.button-play:hover {
+    cursor: pointer;
+    color: rgba(153, 0, 255, 0.931);
+    background-color: rgba(99, 211, 7, 0.548);
+}
+
+
+
+.modal-input-style {
+    display: flex;
+    color: black;
+    margin: auto auto 20px auto;
+    border-radius: 3px;
+    background-color: rgb(67, 140, 182);
+}
+
+.modal-input-cont {
+    margin: auto;
+}
+
+.modal-input-cont:hover {
+    margin: auto;
+    color: rgba(216, 103, 103, 0.945);
+}
+
+.modal-input {
+    padding: 3px;
+    border-radius: 3px;
+    border: 0;
+    background-color: rgb(132, 182, 67);
+    margin: auto;
+    font-size: 17px;
+}
+
+.modal-select {
+    padding: 3px;
+    font-size: 17px;
+    border: 0;
+    background-color: rgb(132, 182, 67);
+    margin: auto;
+}

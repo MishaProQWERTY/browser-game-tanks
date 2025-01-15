@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <span id="world" style="display: none;"><%=world %></span>
+    <span id="player" style="display: none;"><%=player %></span>
+    <span id="id" style="display: none;"><%=id %></span>
+
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const id = document.getElementById('id').innerHTML
+        const player = document.getElementById('player').innerHTML
+        const world = document.getElementById('world').innerHTML
+    </script>
+    
+    <script src="core/display.js"></script>
+    <script src="core/key.js"></script>
+    <script src="core/mouse.js"></script>
+    <script src="core/date.js"></script>
+    <script src="core/render.js"></script>
+    <script src="core/main.js"></script>
+</body>
+</html>

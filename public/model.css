@@ -1,0 +1,44 @@
+.modal {
+    margin: auto;
+    background-color: white;
+    padding: 24px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+}
+
+
+
+.button__close {
+    top: 0;
+    right: 0;
+    padding: 8px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(231, 231, 231, 0.602);
+}
+
+.modal__body {
+    width: 350px;
+}
+
+.one-ring {
+    display: none;
+}

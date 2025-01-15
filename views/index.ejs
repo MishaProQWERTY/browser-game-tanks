@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./model.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-style">
+            <div><span>Id</span></div>
+            <div><input id="inputId" value="localhost"></div>
+        </div>
+        <div class="input-style-cont">
+            <div id="input-new" class="input-span-const" onclick="newmapKey(this)"><span class="input-span">Свой</span></div>
+            <div id="input-out" class="input-span-const" onclick="output(this)"><span class="input-span">Подключиться</span></div>
+        </div>
+        <div class="input-style">
+            <div><span>Мир</span></div>
+            <div><input id="inputWorld" onclick="newmapModal()" readonly></div>
+        </div>
+        <div class="input-style">
+            <div><span>Игрок</span></div>
+            <div><input id="inputPlayer"></div>
+        </div>
+        <div class="button-play-cont">
+            <button class="button-play" onclick="play()">Играть</button>
+        </div>
+    </div>
+
+    <div id="modal" class="one-ring">
+        <div class="modal">
+            <div class="modal__close">
+                <button class="button__close"></button>
+            </div>
+            <div class="modal__body">
+                <div class="modal-input-style">
+                    <div class="modal-input-cont"><span>Новый мир</span></div>
+                    <div class="modal-input-cont">
+                        <input class="modal-input" id="inputNewWorld">
+                    </div>
+                </div>
+                <div class="modal-input-style">
+                    <div class="modal-input-cont"><span>Sid</span></div>
+                    <div class="modal-input-cont">
+                        <input class="modal-input" id="inputSid">
+                    </div>
+                </div>
+                <div class="modal-input-style">
+                    <div class="modal-input-cont"><span>Width</span></div>
+                    <div class="modal-input-cont">
+                        <input class="modal-input" id="inputWidth">
+                    </div>
+                </div>
+                <div class="modal-input-style">
+                    <div class="modal-input-cont"><span>Миры</span></div>
+                    <div>
+                        <select id="selectWorld" class="modal-select">
+                            <% for (var i = 0; i < worlds.length; i++) { %>
+                                <option><%=worlds[i] %></option>
+                            <% } %>
+                        </select>
+                    </div>
+                </div>
+                <div class="button-play-cont">
+                    <button class="button-play" onclick="worldOpen()">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
